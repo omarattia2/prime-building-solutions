@@ -44,10 +44,10 @@ const Header = () => {
       }`}
     >
       <div className="container-wide">
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-24 lg:h-28">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
-            <img src={logo} alt="Prime Building Solutions" className="h-12 w-auto" />
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Prime Building Solutions" className="h-11 w-auto lg:h-14" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -35,6 +35,10 @@ const Contact = () => {
     resetStatus();
   };
 
+  const mapQuery = encodeURIComponent(
+    `${companyInfo.address.street}, ${companyInfo.address.postalCode} ${companyInfo.address.city}, ${companyInfo.address.country}`
+  );
+
   return (
     <Layout>
       {/* Hero */}
@@ -226,6 +230,29 @@ const Contact = () => {
                 )}
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map */}
+      <section className="section-padding pt-0 bg-background">
+        <div className="container-wide">
+          <div className="card-elevated overflow-hidden">
+            <div className="p-6 md:p-8 border-b border-border">
+              <h2 className="heading-md text-foreground">Find Us</h2>
+              <p className="text-muted-foreground">
+                {companyInfo.address.street}, {companyInfo.address.postalCode} {companyInfo.address.city}
+              </p>
+            </div>
+            <div className="aspect-[16/9] w-full">
+              <iframe
+                title="Prime Building Solutions location"
+                src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+                className="h-full w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </div>
       </section>
