@@ -91,7 +91,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/31%206%2084988898"
+                  href="https://wa.me/31684988898"
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-start gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <MessageCircle className="h-5 w-5 flex-shrink-0 mt-0.5 text-green-500" />

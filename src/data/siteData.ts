@@ -282,9 +282,9 @@ export const navigation = {
 // Company info
 export const companyInfo = {
   name: 'Prime Building Solutions',
-  tagline: 'Building the future, sustainably',
+  tagline: 'Building the future, sustainabilty',
   phone: '+31 10 123 4567',
-  email: 'info@primebuildingsolutions.nl',
+  email: 'info@pbsolutionsnl.nl',
   address: {
     street: 'Weena 505',
     city: 'Rotterdam',
