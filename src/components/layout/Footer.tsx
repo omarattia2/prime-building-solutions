@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, MessageCircle } from 'lucide-react';
 import { navigation, companyInfo } from '@/data/siteData';
 import logo from '@/assets/logo/prime logo.png';
 
@@ -87,6 +87,16 @@ const Footer = () => {
                 >
                   <Phone className="h-5 w-5 flex-shrink-0 mt-0.5" />
                   <span className="text-sm">{companyInfo.phone}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/31%206%2084988898"
+                  className="flex items-start gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  <MessageCircle className="h-5 w-5 flex-shrink-0 mt-0.5 text-green-500" />
+                  <span className="text-sm">WhatsApp</span>
+                  <span className="text-sm">+31 6 84988898</span>
                 </a>
               </li>
               <li>
