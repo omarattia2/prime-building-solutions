@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
 import { navigation, companyInfo } from '@/data/siteData';
-import logo from '@/assets/logo/prime logo.png';
+import logo from '@/assets/logo/PrimeBuildingSolutions.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,10 +44,14 @@ const Header = () => {
       }`}
     >
       <div className="container-wide">
-        <nav className="flex items-center justify-between h-24 lg:h-28">
+        <nav className="flex items-center justify-between min-h-[64px] lg:min-h-[72px]">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src={logo} alt="Prime Building Solutions" className="h-11 w-auto lg:h-14" />
+          <Link to="/" className="flex-shrink-0">
+            <img
+              src={logo}
+              alt="Prime Building Solutions"
+              className="h-10 w-auto lg:h-12"
+            />
           </Link>
 
           {/* Desktop Navigation */}

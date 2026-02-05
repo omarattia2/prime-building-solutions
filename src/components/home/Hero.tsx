@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check, CheckCircle, ChevronDown } from 'lucide-react';
 import { services } from '@/data/siteData';
+import heroBackground from '@/assets/hero section/hero.webp';
 import useFormStatus from '@/hooks/useFormStatus';
 
 const initialFormData = {
@@ -42,6 +43,10 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[calc(100vh-5rem)] flex items-center bg-background overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
       {/* Background pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30" />
       
@@ -73,7 +78,7 @@ const Hero = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                  className="flex items-center gap-2 text-sm text-foreground/80"
+                  className="flex items-center gap-2 text-sm font-semibold text-foreground"
                 >
                   <span className="flex items-center justify-center w-5 h-5 bg-primary rounded-full">
                     <Check className="w-3 h-3 text-primary-foreground" />
@@ -96,7 +101,7 @@ const Hero = () => {
               </Link>
               <button
                 onClick={scrollToProjects}
-                className="btn-hero-secondary"
+                className="btn-hero-primary"
               >
                 View Our Work
               </button>
