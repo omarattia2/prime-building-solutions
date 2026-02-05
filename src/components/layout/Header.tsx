@@ -44,13 +44,13 @@ const Header = () => {
       }`}
     >
       <div className="container-wide">
-        <nav className="flex items-center justify-between min-h-[64px] lg:min-h-[72px]">
+        <nav className="flex items-center justify-between min-h-[72px] lg:min-h-[88px]">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
               src={logo}
               alt="Prime Building Solutions"
-              className="h-10 w-auto lg:h-12"
+              className="h-14 w-auto lg:h-20"
             />
           </Link>
 
