@@ -59,8 +59,10 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="heading-display text-foreground mb-6">
-              Premium Architecture{' '}
-              <span className="text-gradient-brand">Built to Perfection</span>
+              Prime Building Solutions{' '}
+              <span className="text-gradient-brand">
+                Building the future, sustainability
+              </span>
             </h1>
             <p className="body-lg text-muted-foreground mb-8 max-w-xl">
               Transforming visions into extraordinary spaces with precision, innovation, and timeless design.
