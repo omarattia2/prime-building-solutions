@@ -1,6 +1,7 @@
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
 import TrustStrip from '@/components/home/TrustStrip';
+import StatsSection from '@/components/home/StatsSection';
 import MovingWords from '@/components/home/MovingWords';
 import ProjectsShowcase from '@/components/home/ProjectsShowcase';
 import WhyChooseUs from '@/components/home/WhyChooseUs';
@@ -15,6 +16,7 @@ const Index = () => {
     <Layout>
       <Hero />
       <TrustStrip />
+      <StatsSection />
       <MovingWords />
       <ProjectsShowcase />
       <WhyChooseUs />

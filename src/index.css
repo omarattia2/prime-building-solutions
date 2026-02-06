@@ -7,7 +7,7 @@
    - brand.dark: #053C1B → hsl(143, 84%, 13%)
    - brand.main: #3F6445 → hsl(130, 24%, 32%)
    - brand.accent: #749572 → hsl(117, 14%, 51%)
-  - brand.bg: #F5EACE → hsl(43, 66%, 88%)
+   - brand.bg: #F4E9CD → hsl(44, 60%, 88%)
    - brand.muted: #B4BDA0 → hsl(81, 18%, 68%)
 */
 
@@ -17,11 +17,11 @@
     --brand-dark: 143 84% 13%;
     --brand-main: 130 24% 32%;
     --brand-accent: 117 14% 51%;
-    --brand-bg: 43 66% 88%;
+    --brand-bg: 44 60% 88%;
     --brand-muted: 81 18% 68%;
     
     /* Core System */
-    --background: 43 66% 88%;
+    --background: 44 60% 88%;
     --foreground: 143 84% 13%;
 
     --card: 0 0% 100%;
@@ -106,7 +106,6 @@
 
   html {
     scroll-behavior: smooth;
-    @apply bg-background;
   }
 
   body {

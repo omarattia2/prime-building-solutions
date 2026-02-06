@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, MessageCircle } from 'lucide-react';
 import { navigation, companyInfo } from '@/data/siteData';
-import logo from '@/assets/logo/prime logo.png';
+import logo from '@/assets/logo-stacked.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Prime Building Solutions" className="h-14 w-auto mb-4 bg-white/90 rounded-lg p-2" />
+            <img
+              src={logo}
+              alt="Prime Building Solutions"
+              className="h-40 w-auto object-contain brightness-0 invert mb-4"
+            />
             <p className="text-primary-foreground/80 mb-6 text-sm leading-relaxed">
               {companyInfo.tagline}. Transforming spaces with precision, innovation, and sustainable building practices.
             </p>
@@ -90,24 +94,21 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://wa.me/31684988898"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-start gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                >
-                  <MessageCircle className="h-5 w-5 flex-shrink-0 mt-0.5 text-green-500" />
-                  <span className="text-sm">WhatsApp</span>
-                  <span className="text-sm">+31 6 84988898</span>
-                </a>
-              </li>
-              <li>
                 <a 
                   href={`mailto:${companyInfo.email}`}
                   className="flex items-start gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <Mail className="h-5 w-5 flex-shrink-0 mt-0.5" />
                   <span className="text-sm">{companyInfo.email}</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={companyInfo.whatsapp.link}
+                  className="flex items-start gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  <MessageCircle className="h-5 w-5 flex-shrink-0 mt-0.5 text-green-500" />
+                  <span className="text-sm">WhatsApp {companyInfo.whatsapp.number}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/80">

@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Mail, MessageCircle } from 'lucide-react';
 import { navigation, companyInfo } from '@/data/siteData';
-import logo from '@/assets/logo/PrimeBuildingSolutions.png';
+import logo from '@/assets/logo-new.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,13 +44,13 @@ const Header = () => {
       }`}
     >
       <div className="container-wide">
-        <nav className="flex items-center justify-between min-h-[72px] lg:min-h-[88px]">
+        <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
               src={logo}
               alt="Prime Building Solutions"
-              className="h-14 w-auto lg:h-20"
+              className="h-14 md:h-16 w-auto object-contain"
             />
           </Link>
 
@@ -193,6 +193,13 @@ const Header = () => {
                   >
                     <Mail className="h-4 w-4" />
                     {companyInfo.email}
+                  </a>
+                  <a 
+                    href={companyInfo.whatsapp.link}
+                    className="flex items-center gap-2 text-foreground/80"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    WhatsApp {companyInfo.whatsapp.number}
                   </a>
                 </div>
                 <div className="px-4 pt-2">
